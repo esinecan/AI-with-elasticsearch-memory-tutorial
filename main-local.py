@@ -17,13 +17,14 @@ logging.getLogger("urllib3").setLevel(logging.DEBUG)
 
 app = FastAPI()
 
-# Elasticsearch credentials (using cloud id from reference)
-CLOUD_ID = "RAGTest:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJGUzZmNkZTI3ODFiMjRkZmViYmNmYjhkMTY3NWU2NzQ5JDVlY2NjN2Q1OWY1ZTRjMDlhYTAyZDk1ZWU5MTcwNDVi"
+# Updated Elasticsearch credentials for local installation
+ES_ENDPOINT = "http://localhost:9200"
 API_KEY = "YOUR KEY"
 INDEX_NAME = "rag_index"
 
+# Update vector_store instantiation to use es_endpoint instead of es_cloud_id
 vector_store = ElasticsearchStore(
-    es_cloud_id=CLOUD_ID,
+    es_endpoint=ES_ENDPOINT,
     es_api_key=API_KEY,
     index_name=INDEX_NAME,
     text_field="content",

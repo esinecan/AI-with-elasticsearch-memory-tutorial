@@ -12,7 +12,7 @@ app = FastAPI()
 
 # Elasticsearch credentials (using cloud id from reference)
 CLOUD_ID = "RAGTest:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJGUzZmNkZTI3ODFiMjRkZmViYmNmYjhkMTY3NWU2NzQ5JDVlY2NjN2Q1OWY1ZTRjMDlhYTAyZDk1ZWU5MTcwNDVi"
-API_KEY = "T2l0dEU1VUJhWGRRbkd0VURCYmw6ZWF3bGhZVThSajYyUjFubHcxQzFjQQ=="
+API_KEY = "YOUR KEY"
 INDEX_NAME = "rag_index"
 
 # New Langchain-related imports
@@ -50,7 +50,7 @@ es_vector_store = ElasticsearchStore(
 ) """
 
 # Initialize LLM using Langchain's Ollama wrapper
-llm = Ollama(model="llama3.2:latest")
+llm = Ollama(model="your-boss:latest")
 
 # Remove unused llama_index imports and settings
 # ...existing code removed...
