@@ -1,0 +1,11 @@
+llama-index
+llama-index-llms-ollama
+llama-index-embeddings-ollama
+llama-index-vector-stores-elasticsearch
+elasticsearch
+langchain
+langchain-elasticsearch
+langchain-community
+fastapi
+uvicorn
+requests
