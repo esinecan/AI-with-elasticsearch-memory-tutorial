@@ -1,4 +1,4 @@
-# ElasticRAG
+# ElasticRAG (USABLE)
 
 ElasticRAG is a project designed to provide a flexible and scalable solution for integrating Elasticsearch with LlamaIndex for Retrieval-Augmented Generation (RAG) applications.
 
